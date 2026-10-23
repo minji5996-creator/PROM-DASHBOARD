@@ -2,7 +2,7 @@
 
 Instagram, Facebook, YouTube, X, 기타 채널의 성과를 모아 보는 한국어 SNS KPI 대시보드입니다.
 
-현재 배포: https://minji-social-pulse-kpi.promrecord.chatgpt.site
+GitHub Pages: https://minji5996-creator.github.io/PROM-DASHBOARD/
 
 ## 주요 기능
 
@@ -20,17 +20,17 @@ Instagram, Facebook, YouTube, X, 기타 채널의 성과를 모아 보는 한국
 빌드나 패키지 설치가 필요 없는 정적 HTML/CSS/JavaScript 프로젝트입니다.
 
 ```sh
-python -m http.server 8000 --directory dist
+python -m http.server 8000
 ```
 
-브라우저에서 http://localhost:8000 을 엽니다. `dist` 폴더를 정적 호스팅의 배포 디렉터리로 지정해도 됩니다.
+브라우저에서 http://localhost:8000 을 엽니다. 저장소 루트(`/`)를 정적 호스팅의 배포 디렉터리로 지정합니다. GitHub Pages는 `main` 브랜치의 루트를 자동 배포합니다.
 
 ## 검증
 
 Node.js가 설치된 환경에서 실행합니다.
 
 ```sh
-node --check dist/app.js
+node --check app.js
 node verify.cjs
 ```
 
@@ -51,6 +51,6 @@ node verify.cjs
 
 ## 파일
 
-`dist/index.html`: 화면 구조 · `dist/style.css`: 반응형 스타일 · `dist/app.js`: 샘플 데이터와 상호작용 · `dist/thumbnails/`: 샘플 사진
+`index.html`: 화면 구조 · `style.css`: 반응형 스타일 · `app.js`: 샘플 데이터와 상호작용 · `thumbnails/`: 샘플 사진
 
 기존 Sites 서비스의 저장소 인증 정보와 사이트별 배포 설정은 포함하지 않았습니다.
