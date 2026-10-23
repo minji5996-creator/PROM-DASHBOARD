@@ -1,0 +1,12 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+const nodes=new Map();const node=()=>({value:'',dataset:{},style:{},classList:{add(){},remove(){},toggle(){}},append(){},replaceChildren(){},addEventListener(){},scrollIntoView(){},showModal(){},close(){},click(){},remove(){}});
+const doc={querySelector(s){if(!nodes.has(s))nodes.set(s,node());return nodes.get(s)},querySelectorAll(){return []},createElement(){return node()},body:node()};
+doc.querySelector('#channel-filter').value='all';doc.querySelector('#sort').value='views';
+let downloads=[];const context={document:doc,window:{addEventListener(){},scrollTo(){}},location:{hash:''},localStorage:{getItem(){return null},setItem(){}},Intl,Date,Map,Set,Blob,URL:{createObjectURL(b){downloads.push(b);return 'blob:test'},revokeObjectURL(){}},setTimeout(){},console};
+vm.createContext(context);vm.runInContext(fs.readFileSync('dist/app.js','utf8'),context);const p=context.window.Pulse;
+assert.equal(p.CHANNELS.length,5);assert.equal(p.RAW.length-p.EVENTS.length,1);assert.equal(p.aggregate(p.EVENTS.filter(r=>r.date>='2026-10-19'&&r.date<='2026-10-25')).views,8420);
+for(const days of [1,7,30,0]){doc.querySelector('#periods').onclick({target:{closest(){return {dataset:{days:String(days)}}}}});const summary=p.summary();const r=p.range();const events=p.EVENTS.filter(e=>e.date>=r.start&&e.date<=r.end);assert.equal(summary.reduce((s,c)=>s+c.views,0),p.aggregate(events).views);assert.equal(p.contentData().reduce((s,c)=>s+c.views,0),p.aggregate(events).views);assert.equal(summary.reduce((s,c)=>s+c.posts,0),p.POSTS.filter(p=>p.published>=r.start&&p.published<=r.end).length);assert.equal(summary.reduce((s,c)=>s+c.followers,0),7936);}
+doc.querySelector('#channel-filter').value='youtube';assert(p.contentData().every(r=>r.channel==='youtube'));doc.querySelector('#search').value='없는 검색어';assert.equal(p.contentData().length,0);doc.querySelector('#search').value='';doc.querySelector('#channel-filter').value='all';
+for(const id of ['#export-all','#export-content','#export-channels','#export-history'])doc.querySelector(id).onclick();assert.equal(downloads.length,4);
+doc.querySelector('#target-input').value='12000';doc.querySelector('#goal-form').onsubmit({preventDefault(){}});assert.equal(p.target,12000);assert.equal(doc.querySelector('#goal-total').textContent,'12,000');
+console.log('PASS: 5 channels, deduplication, 8,420 weekly views, all 4 periods, additive totals, follower snapshots, content filters, 4 CSV exports and target editing.');
