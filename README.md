@@ -15,3 +15,11 @@
 기존 1,049행을 보존하고 82행을 추가해 1,131행입니다. 기존 게시물 관측·dailyRuns·audienceRows를 보존했습니다. 관측 팔로워 단순합29,650(중복 미제거). 기간과 정의가 달라 조회수를 합산하지 않습니다. 이동기간/누적차이는 일일 발생량이 아니고 누락값은0이 아닙니다. Facebook 반응 불일치와 Threads 팔로워 스냅샷 차이를 기록했습니다. 원본 data/ CSV는10/23 아카이브이며 최신 전체관측은 앱 CSV 내보내기 사용.
 
 검사: `node verify.cjs`
+
+## 메뉴·키워드 기반 챗봇
+
+오른쪽 아래 대화 버튼으로 시작합니다. 생성형 AI/API 호출 없이 `chatbot-flow.json`의 등록 답변과 규칙만 사용합니다. 같은 탭 새로고침 시 sessionStorage로 대화를 복원하며 초기화 시 기록을 삭제합니다.
+
+문의 양식은 기존 PROM RECORD Supabase 테이블을 사용하도록 구현했습니다. 기존 컬럼 단위 등록 권한을 그대로 사용하며, 공개 API 문의 등록과 익명 조회 차단 및 테스트 건 삭제를 검증했습니다. 세부 답변 목록과 운영 시 확인할 정보는 [CHATBOT_GUIDE.md](CHATBOT_GUIDE.md)를 참고합니다. 독립 양식은 [contact.html](contact.html)입니다.
+
+추가 검증: `node verify-chatbot.cjs`.
