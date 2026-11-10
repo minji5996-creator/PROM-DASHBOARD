@@ -86228,7 +86228,8 @@ window.SNS_DATA = {
           "replies": 0,
           "reposts": 0,
           "bookmarks": 0,
-          "collectedAt": "2026-11-10T00:17:47.750Z"
+          "collectedAt": "2026-11-10T00:17:47.750Z",
+          "comments": 0
         }
       ]
     },
@@ -86461,7 +86462,8 @@ window.SNS_DATA = {
           "replies": 0,
           "reposts": 0,
           "bookmarks": 0,
-          "collectedAt": "2026-11-10T00:17:47.750Z"
+          "collectedAt": "2026-11-10T00:17:47.750Z",
+          "comments": 0
         }
       ]
     },
@@ -86694,7 +86696,8 @@ window.SNS_DATA = {
           "replies": 0,
           "reposts": 0,
           "bookmarks": 0,
-          "collectedAt": "2026-11-10T00:17:47.750Z"
+          "collectedAt": "2026-11-10T00:17:47.750Z",
+          "comments": 0
         }
       ]
     },
@@ -86927,7 +86930,8 @@ window.SNS_DATA = {
           "replies": 0,
           "reposts": 0,
           "bookmarks": 0,
-          "collectedAt": "2026-11-10T00:17:47.750Z"
+          "collectedAt": "2026-11-10T00:17:47.750Z",
+          "comments": 0
         }
       ]
     },
@@ -87160,7 +87164,8 @@ window.SNS_DATA = {
           "replies": 0,
           "reposts": 0,
           "bookmarks": 0,
-          "collectedAt": "2026-11-10T00:17:47.750Z"
+          "collectedAt": "2026-11-10T00:17:47.750Z",
+          "comments": 0
         }
       ]
     },

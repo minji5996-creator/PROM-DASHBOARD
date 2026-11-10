@@ -23,3 +23,5 @@ assert.equal(p.contentData().find(x=>x.key==="youtube:An-n33-njL8").observed.vie
 assert.equal(p.D.metricRows.filter(r=>r.collectedAt===p.D.preparedAt).length,187);assert.equal(p.periodRows("facebook").find(r=>r.metric==="reactions").value,null);assert.equal(p.D.accounts.find(a=>a.platform==="threads").followers,2304);console.log("PASS: daily count and conflict/null preservation");
 
 assert.equal(p.account("facebook").status,"blocked");assert.equal(p.D.youtubeLatest.views,12);assert.equal(p.D.audienceRows.filter(r=>r.collectedAt===p.D.preparedAt).length,91);assert.equal(p.D.accounts.filter(a=>a.followers!=null).length,4);console.log("PASS: blocked Facebook, current YouTube, 91 audience observations, 4 verified accounts");
+
+assert(p.D.posts.filter(x=>x.platform==="x").every(x=>x.observations.at(-1).comments===0));console.log("PASS: X zero replies mapped to dashboard comments");
