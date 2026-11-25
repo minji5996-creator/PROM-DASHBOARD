@@ -2,38 +2,38 @@
 
 배포: https://minji5996-creator.github.io/PROM-DASHBOARD/
 
-## 최신 조사: 2026-11-24
+## 최신 조사: 2026-11-25
 
 ## x
-팔로워0·공개글15개(자체답글포함), 게시물 누적조회486회입니다. Preview02는15회·좋아요1, 이전 Preview17회·좋아요1입니다. Game Cinematic 연결글83·71·61회로 관측됐습니다. 첫 장면과 제작과정 후속글을 시험하세요. 누적 관측 차이는 하루 발생량이 아니며 답글5건은 자체 연결글을 포함합니다.
+팔로워0·공개글15개(자체답글포함), 게시물 누적조회490회. Preview02는17회·좋아요1, 이전 Preview19회·좋아요1. Game Cinematic 연결글83·71·61회로 관측됐습니다. 첫 장면과 제작과정 후속글 실험을 권장합니다. 누적 관측 차이는 하루 발생량이 아니며 답글5건은 자체 연결글을 포함합니다.
 
 출처: https://x.com/promrecord
 
 ## instagram
-최근30일 조회수23.7만·조회한사람10.7만·반응7111. 최근7일4만·2.4만·반응1314, 프로필방문312·링크5. 조회의95.1%가 비팔로워로 신규 노출이 크지만 프로필/링크 전환 CTA 보강 권장. 11월3일 릴스 누적1.5만·팔로우89, Preview02 누적2464·팔로우3. 기간 카드와 게시후누적 값은 별도.
+최근30일 조회수 23.2만(반올림 표시), 비팔로워 표시 비중 95.7. 11월3일 인기 릴스 상세는 저장153·공유142·팔로우89로 확인. 최근7일 조회수3.5만(반올림 표시)이며 프로필방문400. 조회수의 정확한 원시값은 UI에 미표시.
 
 출처: https://www.instagram.com/accounts/insights/?timeframe=30
 
 ## threads
-최근30일(10/25~11/23)조회4654·조회한사람2359·반응91·순팔로워+6. 최근7일(11/17~23)조회886(-47%)·반응22(-29%)·순팔로워-2. 한국 시청자87%,7일25~44세78%(표시비중합). Preview02 누적조회189·프로필방문9·팔로우0. 일/목/금15~18시 시청자 활동 구간을 게시 실험 후보로 활용.
+최근30일 조회4481·조회자2332·순팔로워+4, 최근7일 조회876·조회자521·순팔로워-2. 30일 조회자 국가 대한민국87%, 활동시간 상위 월·일·목 15~18시(GMT+9). Preview02 누적조회197·프로필방문9·팔로우0으로 관측.
 
 출처: https://www.threads.com/insights?days=30
 
 ## youtube
-지난28일 조회수42,530, 시청281.5시간, 순구독자-6. 지난7일13,434회·70.4시간·+7명. aespa 영상이28일33,843회(79.6%)로 주도. 신규83.4%이나 정기시청자0.9%로 재방문 전환이 과제. 최신 Preview02는 게시후182회·좋아요2·계속시청17.2%로 도입부 강화 권장.
+28일 42,289조회 중 aespa 33,748(79.8%); 7일 13,603 중 11,126(81.8%). 28일 순구독자 -5, 7일 +4. 대표 영상 편중이 커 후속 콘텐츠와 재방문 유도를 시험하세요. 총구독자19,752명, 최신 Preview02 186회·좋아요2·평균조회율38%.
 
-출처: https://studio.youtube.com/channel/UC0UncCw3Cmx-SHEJa0VoJog/analytics/hub_overview
+출처: https://studio.youtube.com/channel/UC0UncCw3Cmx-SHEJa0VoJog/analytics/hub_overview/explore?entity_type=CHANNEL&entity_id=UC0UncCw3Cmx-SHEJa0VoJog&time_period=4_weeks&explore_type=TABLE_AND_CHART&metrics_computation_type=DELTA&metric=EXTERNAL_VIEWS&granularity=DAY&t_metrics=EXTERNAL_VIEWS&t_metrics=EXTERNAL_WATCH_TIME&t_metrics=SUBSCRIBERS_NET_CHANGE&t_metrics=TOTAL_ESTIMATED_EARNINGS&t_metrics=VIDEO_THUMBNAIL_IMPRESSIONS&t_metrics=VIDEO_THUMBNAIL_IMPRESSIONS_VTR&dimension=VIDEO&o_column=EXTERNAL_VIEWS&o_direction=ANALYTICS_ORDER_DIRECTION_DESC
 
 ## facebook
-Prom Record 팔로워1명. 최근30일87회·3초조회22·시청200초, 최근28일68회·3초16·144초. 두 기간 참여·방문·신규팔로우0. 조회는 비팔로워100%로 노출 이후 팔로우·참여 유도가 우선.
+[blocked] 오늘 프로필/홈 반복 탐색 시간초과. NEURA나 이력수치 대체 없음.
 
 출처: https://www.facebook.com/profile.php?id=61595324797271
 
 ## 집계와 보존
-기존 6122개 지표 보존, 213행 추가. 오디언스 184행 추가. 총 6335지표/1660기간/3084오디언스/106게시물/31실행이력.
+기존 6335개 지표 보존, 172행 추가. 오디언스 277행 추가. 총 6507지표/1722기간/3361오디언스/106게시물/32실행이력.
 수집기간과 누적 차이는 일별발생량이 아닙니다.
 
-[일일 조사 상세](DAILY-2026-11-24.md)
+[일일 조사 상세](DAILY-2026-11-25.md)
 
 ## 메뉴·키워드 기반 챗봇
 
